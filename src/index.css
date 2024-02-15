@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  background-color: #9dbc98;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navBar ul li {
+  cursor: pointer;
+}
+.navBar ul li:hover {
+  color: rgba(240, 248, 255, 0.549);
+}
+.containerCard {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.cardProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+.emoji {
+  font-size: 2rem;
+  margin: 0;
+}
+.cart {
+  width: 20vw;
+  height: 100%;
+  background-color: #13aa52;
+  position: absolute;
+  display: flex;
+  transform: translateX(-17vw);
+  transition: transform 2s;
+}
+
+.cart:hover {
+  transform: translateX(0);
+  cursor: pointer;
+}
