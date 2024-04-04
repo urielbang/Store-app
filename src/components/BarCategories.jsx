@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import items from "../data/data";
 import CardProduct from "./CardProduct";
 import Cart from "./Cart";
 import { FaShoppingCart } from "react-icons/fa";
 
 export default function BarCategories() {
-  const [categoryDisplay, setCategoryDisplay] = useState([]);
+  const [categoryDisplay, setCategoryDisplay] = useState(items);
 
   const handleClick = (e) => {
     const renderdCategory = items.filter((item) => {
@@ -15,7 +15,8 @@ export default function BarCategories() {
     setCategoryDisplay(renderdCategory);
   };
   const uniqueCategories = [...new Set(items.map((item) => item.category))];
-  console.log(uniqueCategories);
+
+  useEffect(() => {}, []);
   return (
     <>
       <div className="navBar">

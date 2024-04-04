@@ -83,6 +83,7 @@ body {
   height: 100%;
   background-color: #13aa52;
   position: absolute;
+  z-index: 100;
   display: flex;
   transform: translateX(-17vw);
   transition: transform 2s;
